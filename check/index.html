@@ -136,8 +136,8 @@
           <p>&copy; 2025 大星科技. 保留所有权利.</p>
         </div>
         <div class="flex space-x-6">
-          <a href="http://www.pdxstudio.site" class="hover:text-gray-900 dark:hover:text-white transition-custom"><span>返回首页</span></a>
-          <a href="http://www.pdxstudio.site/pay" class="hover:text-gray-900 dark:hover:text-white transition-custom"><span>赞助我们</span></a>
+          <a href="/" class="hover:text-gray-900 dark:hover:text-white transition-custom"><span>返回首页</span></a>
+          <a href="/pay" class="hover:text-gray-900 dark:hover:text-white transition-custom"><span>赞助我们</span></a>
         </div>
       </div>
     </div>
@@ -164,8 +164,7 @@
     const toastMessage = document.getElementById('toastMessage');
     const toastIcon = document.getElementById('toastIcon');
     let toastTimeout;
-    
-    // 主题切换逻辑
+
     function updateThemeIcon() {
       if (htmlElement.classList.contains('dark')) {
         themeToggle.textContent = '☀️';
