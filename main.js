@@ -1,4 +1,3 @@
-/* ── Intro Animation ── */
 (function () {
   const overlay = document.getElementById("introOverlay");
   if (!overlay) return;
@@ -8,14 +7,12 @@
 
   document.documentElement.style.overflow = "hidden";
 
-  // Start from scale(0.5) to match the original CSS animation
   logoWrapper.style.transition = "none";
   logoWrapper.style.animation = "none";
   logoWrapper.style.transform = "scale(0.5)";
   logoWrapper.style.opacity = "0";
   void logoWrapper.offsetHeight;
 
-  // Animate logo appearing
   requestAnimationFrame(function () {
     logoWrapper.style.transition =
       "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1)";
@@ -24,7 +21,7 @@
   });
 
   setTimeout(function () {
-    // Measure after appear animation
+
     logoWrapper.style.transition = "none";
     void logoWrapper.offsetHeight;
 
