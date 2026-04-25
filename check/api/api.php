@@ -9,7 +9,7 @@ if (empty($user)) {
     exit;
 }
 
-$url1 = 'https://xmwk.top/api.php?act=chadan&username=' . urlencode($user);
+$url1 = '' . urlencode($user);
 $ch1 = curl_init();
 curl_setopt($ch1, CURLOPT_URL, $url1);
 curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
@@ -19,7 +19,7 @@ curl_setopt($ch1, CURLOPT_TIMEOUT, 5);
 $response1 = curl_exec($ch1);
 curl_close($ch1);
 
-$url2 = 'https://29.bookwk.top/api.php?act=chadanoid';
+$url2 = '';
 $postData = http_build_query([
     'uid' => '13156',
     'key' => 'l10hTwtj0jhdLoCO',
