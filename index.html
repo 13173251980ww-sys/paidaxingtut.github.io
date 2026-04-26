@@ -78,6 +78,15 @@
           <p class="hitokoto-text">加载中...</p>
           <p class="hitokoto-from"></p>
         </div>
+
+        <div class="site-counter">
+          <span id="busuanzi_container_site_pv" style="display: none">
+            你是第
+            <span id="busuanzi_value_site_pv" class="counter-num"></span>
+            次访问的
+          </span>
+        </div>
+        
       </div>
     </section>
 
@@ -94,44 +103,14 @@
             <div class="track-line"></div>
             <div class="track-progress" id="trackProgress"></div>
 
-            <div class="rocket-wrapper" id="rocketWrapper">
+             <div class="rocket-wrapper" id="rocketWrapper">
               <svg
                 class="rocket-svg"
                 viewBox="-8 0 64 32"
                 width="68"
                 height="32"
               >
-                <path
-                  class="flame-outer"
-                  d="M6 10 L-6 16 L6 22Z"
-                  fill="#ff9500"
-                />
-                <path
-                  class="flame-inner"
-                  d="M6 12 L-2 16 L6 20Z"
-                  fill="#ffd700"
-                />
-                <rect
-                  x="6"
-                  y="8"
-                  width="32"
-                  height="16"
-                  rx="8"
-                  fill="#d4622b"
-                  stroke="#b34d1d"
-                  stroke-width="0.5"
-                />
-                <path d="M38 8 C42 8 56 16 38 24Z" fill="#b34d1d" />
-                <circle
-                  cx="22"
-                  cy="16"
-                  r="4"
-                  fill="#f7f3eb"
-                  stroke="#b34d1d"
-                  stroke-width="0.5"
-                />
-                <path d="M6 8 L0 0 L14 8Z" fill="#3d7a6e" />
-                <path d="M6 24 L0 32 L14 24Z" fill="#3d7a6e" />
+                <use href="img/icons.svg#icon-rocket"></use>
               </svg>
             </div>
 
@@ -552,6 +531,7 @@
       </div>
     </footer>
 
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
